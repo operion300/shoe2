@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shoeInfor"
+            type="com.example.shoestore.ui.fragment.additem.SharedListViewModel" />
+    </data>
+    <!--
+    simple layout with views grouping in linear way, LinearLayout is enough
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/product_name_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detail_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{shoeInfor.shoeListItem.name}"
+            tools:text="Detail name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/product_size_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detail_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:text="Detail size" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/product_company_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detail_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:text="Detail company" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/product_description_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/detail_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            tools:text="Detail description" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/detail_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back_to_list_btn"
+            android:backgroundTint="@color/startColor"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp" />
+
+
+    </LinearLayout>
+
+</layout>
+

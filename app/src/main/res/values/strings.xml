@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="login_title">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="welcome_btn1">Instructions</string>
+    <string name="welcome_btn2">Shoe List</string>
+    <string name="page_btn_nxt">Next</string>
+    <string name="page_instruction_1">Instruction 1</string>
+    <string name="page_instruction_2">Instruction 2</string>
+    <string name="page_back_btn">Back</string>
+    <string name="page_instruction_3">Instruction 3</string>
+    <string name="page_finish_btn">Finish</string>
+    <string name="product_name_label">Product name</string>
+    <string name="product_size_label">Product size</string>
+    <string name="product_company_label">Product company</string>
+    <string name="product_description_label">Product description</string>
+    <string name="back_to_list_btn">Back to list</string>
+    <string name="product_name_reg">Product name</string>
+    <string name="product_size_reg">Product size</string>
+    <string name="product_description_reg">Product description</string>
+    <string name="product_company_reg">Product company</string>
+    <string name="register_reg">Register</string>
+    <string name="cancel_reg">Cancel</string>
+    <string name="add_item_fb_desc">add item</string>
+    <string name="welcome_bar_txt">Welcome</string>
+    <string name="inst_bar_txt">Instruction</string>
+    <string name="list_bar_txt">List of Shoes</string>
+    <string name="detail_bar_txt">Shoe Detail</string>
+    <string name="add_bar_txt">Add New Shoe</string>
+</resources>
