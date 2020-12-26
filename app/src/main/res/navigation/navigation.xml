@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.shoestore.ui.fragment.welcome.WelcomeFragment"
-        android:label="WelcomeFragment" >
+        android:label="@string/welcome_bar_txt" >
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
             app:destination="@id/instructionsFragment"
@@ -38,7 +38,7 @@
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.example.shoestore.ui.fragment.instructions.InstructionsFragment"
-        android:label="InstructionsFragment" >
+        android:label="@string/inst_bar_txt" >
         <action
             android:id="@+id/action_instructionsFragment_to_shoeListFragment"
             app:destination="@id/shoeListFragment"
@@ -52,23 +52,15 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.example.shoestore.ui.fragment.shoelist.ShoeListFragment"
-        android:label="ShoeListFragment" >
+        android:label="@string/list_bar_txt" >
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
             app:destination="@id/shoeDetailFragment"
-            app:enterAnim="@anim/fragment_close_enter"
-            app:exitAnim="@anim/fragment_close_exit"
-            app:popEnterAnim="@anim/fragment_close_enter"
-            app:popExitAnim="@anim/fragment_close_exit"
             app:popUpTo="@id/shoeListFragment"
             app:popUpToInclusive="false" />
         <action
             android:id="@+id/action_shoeListFragment_to_addItemFragment"
             app:destination="@id/addItemFragment"
-            app:enterAnim="@anim/fragment_open_enter"
-            app:exitAnim="@anim/fragment_open_exit"
-            app:popEnterAnim="@anim/fragment_open_enter"
-            app:popExitAnim="@anim/fragment_open_exit"
             app:popUpTo="@id/shoeListFragment"
             app:popUpToInclusive="false" />
         <argument
@@ -81,21 +73,17 @@
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.example.shoestore.ui.fragment.shoedetail.ShoeDetailFragment"
-        android:label="ShoeDetailFragment" >
+        android:label="@string/detail_bar_txt">
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"
-            app:destination="@id/shoeListFragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim" />
+            app:destination="@id/shoeListFragment" />
     </fragment>
     <fragment
         android:id="@+id/addItemFragment"
         android:name="com.example.shoestore.ui.fragment.additem.AddItemFragment"
-        android:label="AddItemFragment" >
+        android:label="@string/add_bar_txt" >
         <action
             android:id="@+id/action_addItemFragment_to_shoeListFragment"
-            app:destination="@id/shoeListFragment"
-            app:enterAnim="@anim/nav_default_pop_enter_anim"
-            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+            app:destination="@id/shoeListFragment" />
     </fragment>
 </navigation>

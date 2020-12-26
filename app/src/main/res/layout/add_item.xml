@@ -22,6 +22,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/white"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
                 android:hint="@string/product_name_reg"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -35,7 +38,9 @@
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/white"
                 android:hint="@string/product_size_reg"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:maxLines="1"
+                android:imeOptions="actionNext"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -47,6 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/white"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
                 android:hint="@string/product_company_reg"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,6 +67,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/white"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
                 android:hint="@string/product_description_reg"/>
         </com.google.android.material.textfield.TextInputLayout>
 

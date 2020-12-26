@@ -33,9 +33,7 @@ class WelcomeFragment:Fragment() {
             Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_instructionsFragment)
                 //Navigation.createNavigateOnClickListener(R.id.action_welcomeFragment_to_shoeListFragment)
         )
-
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.welcome_bar_txt)
-
+        
         return binding.root
     }
 

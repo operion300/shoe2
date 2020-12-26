@@ -48,7 +48,6 @@ class AddItemFragment:Fragment() {
             keyBoard.hideSoftInputFromWindow(view?.windowToken,0)
         }
 
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.add_bar_txt)
 
         return binding.root
     }

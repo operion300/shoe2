@@ -12,7 +12,7 @@ class LoginViewModel:ViewModel() {
 
 
     fun getUser(){
-        _liveUser.value = User("Ana","ana@gmail.com","123")
+        _liveUser.value = User("Alan","alan@gmail.com","123")
     }
 
 

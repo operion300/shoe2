@@ -21,16 +21,13 @@ class LoginFragment:Fragment() {
     lateinit var binding:LoginFragmentBinding
     lateinit var viewModel:LoginViewModel
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        (activity as AppCompatActivity).supportActionBar?.hide()
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        (activity as AppCompatActivity).supportActionBar?.hide()
 
         binding = DataBindingUtil.inflate(inflater,R.layout.login_fragment,container,false)
 

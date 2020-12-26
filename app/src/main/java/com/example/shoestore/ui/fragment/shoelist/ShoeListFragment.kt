@@ -42,8 +42,6 @@ class ShoeListFragment:Fragment() {
                 findNavController().navigate(R.id.action_shoeListFragment_to_shoeDetailFragment)
                 viewModel.itemList()
 
-
-
             }
 
         })
@@ -51,8 +49,6 @@ class ShoeListFragment:Fragment() {
         binding.floatBtn.setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.action_shoeListFragment_to_addItemFragment)
         )
-
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.list_bar_txt)
 
         return binding.root
     }

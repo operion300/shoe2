@@ -41,8 +41,6 @@ class InstructionsFragment:Fragment() {
             setupWithViewPager(viewPager)
         }
 
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.inst_bar_txt)
-
         return binding.root
     }
 

@@ -29,7 +29,11 @@ class ShoeDetailFragment:Fragment() {
                 Navigation.createNavigateOnClickListener(R.id.action_shoeDetailFragment_to_shoeListFragment)
         )
 
-        (activity as AppCompatActivity).supportActionBar?.title = getString(R.string.detail_bar_txt)
+        /**
+         * check conflict with fragment label in navigation xml and setTitle
+         */
+        //(activity as AppCompatActivity).supportActionBar?.title = getString(R.string.detail_bar_txt)
+        //(activity as AppCompatActivity).supportActionBar?.setTitle(R.string.detail_bar_txt)
 
         return binding.root
     }
