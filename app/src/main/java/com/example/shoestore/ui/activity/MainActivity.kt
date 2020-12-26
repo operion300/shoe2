@@ -36,11 +36,3 @@ class MainActivity : AppCompatActivity() {
         navController.navigateUp()
     }
 }
-
-/**
- * alterações para fazer (revisão):
- * 3 - binding as editViews da detailScreen usando a tag <data>;
- * 4 - adicionar um menu na shoeList screen com a opção de logout (levar o usuário para  a tela de login); esse menu
- * só deve aparecer nessa tela;
- * 5 - reparar o add item na lista; professor colocou algumas dicas na revisão (ver)
- */

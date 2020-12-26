@@ -1,9 +1,7 @@
 package com.example.shoestore.ui.fragment.shoelist
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -29,6 +27,7 @@ class ShoeListFragment:Fragment() {
         val binding:ShoelistFragmentBinding =
                 DataBindingUtil.inflate(inflater, R.layout.shoelist_fragment, container, false)
 
+        setHasOptionsMenu(true)
 
         viewModel = ViewModelProvider(requireActivity()).get(SharedListViewModel::class.java)
 
@@ -58,6 +57,17 @@ class ShoeListFragment:Fragment() {
         return binding.root
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.logout_menu,menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.logout -> findNavController().navigate(R.id.action_shoeListFragment_to_loginFragment)
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 
 }

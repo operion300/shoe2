@@ -46,7 +46,7 @@
             android:id="@+id/detail_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:text="@{String.valueOf(shoeInfor.shoeListItem.size)}"
             tools:text="Detail size" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -61,7 +61,7 @@
             android:id="@+id/detail_company"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:text="@{shoeInfor.shoeListItem.company}"
             tools:text="Detail company" />
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -76,7 +76,7 @@
             android:id="@+id/detail_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
+            android:text="@{shoeInfor.shoeListItem.description}"
             tools:text="Detail description" />
 
         <androidx.appcompat.widget.AppCompatButton

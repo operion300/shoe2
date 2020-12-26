@@ -29,4 +29,5 @@
     <string name="list_bar_txt">List of Shoes</string>
     <string name="detail_bar_txt">Shoe Detail</string>
     <string name="add_bar_txt">Add New Shoe</string>
+    <string name="logout_txt">logout</string>
 </resources>

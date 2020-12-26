@@ -20,18 +20,10 @@ class ShoeDetailFragment:Fragment() {
 
         val binding:DetailFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.detail_fragment,container,false)
 
-        /*val args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
-
-        binding.detailName.text = args.shoeData.name
-        binding.detailSize.text = args.shoeData.size.toString()
-        binding.detailCompany.text = args.shoeData.company
-        binding.detailDescription.text = args.shoeData.description
-        */
         val viewModel = ViewModelProvider(requireActivity()).get(SharedListViewModel::class.java)
-        binding.detailName.text = viewModel.shoeListItem.name
-        binding.detailSize.text = viewModel.shoeListItem.size.toString()
-        binding.detailCompany.text = viewModel.shoeListItem.company
-        binding.detailDescription.text = viewModel.shoeListItem.description
+
+        //passing viewModel to xml variable
+        binding.shoeInfor = viewModel
 
         binding.detailBackBtn.setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.action_shoeDetailFragment_to_shoeListFragment)
