@@ -30,7 +30,10 @@ class ShoeDetailFragment:Fragment() {
         )
 
         /**
-         * check conflict with fragment label in navigation xml and setTitle
+         * When add a item (fragment) in navigation xml file using design editor, the bar title label attribute
+         * is added automatically; as xml loads faster then one of the method below, just one way needed
+         * to be used for bar title: or using the label in fragment item in navigation xml or remove
+         * label from item and use one of the method below; not use both;
          */
         //(activity as AppCompatActivity).supportActionBar?.title = getString(R.string.detail_bar_txt)
         //(activity as AppCompatActivity).supportActionBar?.setTitle(R.string.detail_bar_txt)
